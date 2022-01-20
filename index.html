@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Play Free Fantasy BART Online!</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js" integrity="sha512-QkuqGuFAgaPp3RTyTyJZnB1IuwbVAqpVGN58UJ93pwZel7NZ8wJOGmpO1zPxZGehX+0pc9/dpNG9QdL52aI4Cg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+</head>
+
+<body>
+
+    <div class='container'>
+        <header>Welcome to Fantasy BART!</header>
+
+      <div class='current-train-box'>
+        <div class="subheader">Current trains:</div>
+        <table class='train-table' id='trainHeaders'>
+          <tr>
+            <th>Train Name</th>
+            <th>Destination</th>
+            <th>Frequency (min)</th>
+            <th>Next Arrival</th>
+            <th>ETA</th>
+          </tr>
+        </table>
+        <table class='train-table' id='trainTable'></table>
+      </div>
+
+      <div class='train-adder-box'>
+        <div class='subheader'>Add a train!</div>
+        <label for="newName">New Train Name:</label>
+        <input type='text' id='newName'>
+        <label for="newDestination">New Train Destination:</label>
+        <input type='text' id='newDestination'>
+        <label for="newStartTime">New Train Start Time (HH:mm military time):</label>
+        <input type='text' id='newStartTime'>
+        <label for="newFrequency">Frequency (min):</label>
+        <input type='text' id='newFrequency'>
+        <button id='adderButton'>Add this train!</button>
+      </div>
+
+    </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+header {
+    text-align: center;
+    background-color: yellow;
+    padding: 50px;
+    margin-bottom: 20px;
+    font-size: 48px;
+    color: orange;
+}
+
+.train-table {
+    width: 100%;
+}
+
+.train-table th {
+    width: 20%;
+}
+
+.train-table td {
+    width: 20%;
+}
+
+.subheader {
+    text-align: center;
+    background-color: green;
+    margin: 10px 0;
+    color: yellow;
+    padding: 20px 0;
+}
+
+input {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
